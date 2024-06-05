@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="violet">#DD48A1</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="black">#101010</color>
+    <color name="pink">#D0006E</color>
+    <color name="gray">#C4C4C4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black_value">#0B080F</color>
+    <color name="gray_light">#D9D5D6</color>
+    <color name="dark_value">#393637</color>
+</resources>

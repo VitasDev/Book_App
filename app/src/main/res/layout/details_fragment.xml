@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top_viewpager_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_background_details"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_left"
+                android:padding="6dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"/>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager_details"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:paddingStart="80dp"
+                android:paddingEnd="80dp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/book_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="20sp"
+                android:paddingHorizontal="8dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/nunitosans_bold"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:text="If It’s Only Love"
+                android:layout_marginTop="14dp"/>
+
+            <TextView
+                android:id="@+id/author_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="14sp"
+                android:textColor="@color/white_80"
+                android:fontFamily="@font/nunitosans_bold"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:text="Zoey Evers"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_rectangle_rounded_top"
+            app:layout_constraintTop_toBottomOf="@+id/top_viewpager_container"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical"
+            android:layout_marginTop="-20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:layout_marginHorizontal="4dp"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/readers_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="18sp"
+                        android:textColor="@color/black_value"
+                        android:fontFamily="@font/nunitosans_bold"
+                        android:includeFontPadding="false"
+                        android:textAlignment="center"
+                        android:text="22.2k" />
+
+                    <TextView
+                        android:id="@+id/readers_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_light"
+                        android:fontFamily="@font/nunitosans"
+                        android:includeFontPadding="false"
+                        android:textAlignment="center"
+                        android:text="Readers" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/likes_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="18sp"
+                        android:textColor="@color/black_value"
+                        android:fontFamily="@font/nunitosans_bold"
+                        android:includeFontPadding="false"
+                        android:textAlignment="center"
+                        android:text="10.4k" />
+
+                    <TextView
+                        android:id="@+id/likes_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_light"
+                        android:fontFamily="@font/nunitosans"
+                        android:includeFontPadding="false"
+                        android:textAlignment="center"
+                        android:text="Likes" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/quotes_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="18sp"
+                        android:textColor="@color/black_value"
+                        android:fontFamily="@font/nunitosans_bold"
+                        android:includeFontPadding="false"
+                        android:textAlignment="center"
+                        android:text="32.5k" />
+
+                    <TextView
+                        android:id="@+id/quotes_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_light"
+                        android:fontFamily="@font/nunitosans"
+                        android:includeFontPadding="false"
+                        android:textAlignment="center"
+                        android:text="Quotes" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/genre_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="18sp"
+                        android:textColor="@color/black_value"
+                        android:fontFamily="@font/nunitosans_bold"
+                        android:includeFontPadding="false"
+                        android:textAlignment="center"
+                        android:text="Hot" />
+
+                    <TextView
+                        android:id="@+id/genre_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_light"
+                        android:fontFamily="@font/nunitosans"
+                        android:includeFontPadding="false"
+                        android:textAlignment="center"
+                        android:text="Genre" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_line_divider"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/summary_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black_value"
+                android:fontFamily="@font/nunitosans_bold"
+                android:includeFontPadding="false"
+                android:text="@string/summary"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/summary_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:textColor="@color/dark_value"
+                    android:fontFamily="@font/nunitosans"
+                    android:text="" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_line_divider"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/you_will_also_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black_value"
+                android:fontFamily="@font/nunitosans_bold"
+                android:includeFontPadding="false"
+                android:text="@string/you_will_also_like"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_recommended_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"/>
+
+            <TextView
+                android:id="@+id/btn_read_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/read_now"
+                android:textColor="@color/white"
+                android:fontFamily="@font/nunitosans_bold"
+                android:includeFontPadding="false"
+                android:textSize="16sp"
+                android:background="@drawable/pink_rectangle_rounded"
+                android:paddingVertical="16dp"
+                android:gravity="center"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="40dp"/>
+        </LinearLayout>
+      </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

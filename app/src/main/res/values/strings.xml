@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BookApp</string>
+    <string name="book_app">Book App</string>
+    <string name="welcome_to_book_app">Welcome to Book App</string>
+    <string name="library">Library</string>
+    <string name="summary">Summary</string>
+    <string name="you_will_also_like">You will also like</string>
+    <string name="read_now">Read Now</string>
+</resources>
